@@ -1,19 +1,15 @@
-// JS
-import './js/'
-
+import Vue from 'vue';
+import Example from './js/components/Example.vue';
 // SCSS
-import './assets/scss/main.scss'
+import './assets/scss/main.scss';
 
 // CSS (example)
 // import './assets/css/main.css'
-
-// Vue.js
-window.Vue = require('vue')
-
 // Vue components (for use in html)
-Vue.component('example-component', require('./js/components/Example.vue').default)
+Vue.component('example-component', Example);
 
 // Vue init
 const app = new Vue({
-  el: '#app'
-})
+  el: '#app',
+});
+export default app;
